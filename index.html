@@ -17,8 +17,8 @@
     <section class="container">
 
 
-        
-        <div class="weather-header">
+        <!-- search bar -->
+        <div class="weather-header">                    
             <form class="weather-search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input 
@@ -29,7 +29,55 @@
             </form>
         </div>
 
+            <!-- weather body -->
+        <div class="weather-body">
+            <h1 class="weather-city"></h1>
+            <p class="weather-date-time"></p>
+            <div class="weather-data">
+                <p class="weather-forecast"></p>
+                <div class="weather-icon"></div>
+            </div>
+            <p class="weather-temperature"></p>
+            <div class="weather-minmax">
+                <p class="weather-min"></p>
+                <p class="weather-max"></p>
+            </div>
+        </div>
 
+        <!-- weather body end -->
+        <section class="weather-info">
+            <div class="weather-card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Feels Like</p>
+                    <p class="weather-feels-like">15&#176</p>
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Feels Like</p>
+                    <p class="weather-humidity">15&#176</p>
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Feels Like</p>
+                    <p class="weather-wind">15&#176</p>
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Feels Like</p>
+                    <p class="weather-pressure">15&#176</p>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 </html>
