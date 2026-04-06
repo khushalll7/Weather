@@ -19,7 +19,7 @@ body{
 
 .container{
    
-    background: url(boat-lake.jpg) no-repeat center center ;
+    background: url(nattu-adnan-atSUvc1hMwk-unsplash.jpg) no-repeat center center ;
     background-size: cover;
     color: #171717;
     width: 40%;
@@ -40,14 +40,14 @@ body{
 
 input{
     background: rgba(255,255,255, 0.15);
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     border: none;
     /* background: #1e1e1e; */
     color: #0f0e0e;
     font-weight: 550;
     outline: none;
     padding: 0.5rem 2.5rem;
-   box-shadow: 0 0 10px rgb(12, 12, 12);
+   /* box-shadow: 0 0 10px rgb(12, 12, 12); */
     
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -62,7 +62,7 @@ input::placeholder{
 
 .weather-search{
     background: rgba(255,255,255, 0.15);
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     box-shadow: 0 0 10px rgb(12, 12, 12);
     
     border-radius: 10px;
@@ -95,7 +95,7 @@ input::placeholder{
 }
 
 .weather-body{
-    box-shadow: 0 0 10px rgb(12, 12, 12);
+    /* box-shadow: 0 0 10px rgb(12, 12, 12); */
     
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -113,10 +113,10 @@ input::placeholder{
 }
 
 .weather-forecast {
-    background: rgba(233, 7, 7, 0.15);
-    backdrop-filter: blur(5px);
-     background: rgba(255,255,255, 0.15);
-    backdrop-filter: blur(50px);
+    /* background: rgba(233, 7, 7, 0.15); */
+    /* backdrop-filter: blur(5px); */
+     /* background: rgba(255,255,255, 0.15); */
+    /* backdrop-filter: blur(50px); */
     box-shadow: 0 0 10px rgb(12, 12, 12);
     
     border-radius: 10px;
@@ -131,13 +131,25 @@ input::placeholder{
   display: inline-block;
   padding: 0.3rem 1rem;
   border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .weather-icon img{
-    
+    /*background: rgba(255,255,255, 0.15);
+    *//*backdrop-filter: blur(50px);
+    */box-shadow: 0 0 10px rgb(12, 12, 12);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
     width: 100px;
-  filter: drop-shadow(2px 4px 6px black);
-  -webkit-filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(2px 4px 6px black);
+    -webkit-filter: drop-shadow(2px 4px 6px black);
+    margin-top: 1rem;
 }
 
 .weather-temperature{
