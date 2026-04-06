@@ -19,10 +19,11 @@ body{
 
 .container{
    
-    background: url(nattu-adnan-atSUvc1hMwk-unsplash.jpg) no-repeat center center ;
+    background: url(nattu-adnan-atSUvc1hMwk-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #171717;
-    width: 40%;
+    width: 90%;
+    max-width: 1200px;
     padding: 2rem;
     margin: 3rem auto;
     border-radius: 10px;
@@ -46,9 +47,12 @@ input{
     color: #0f0e0e;
     font-weight: 550;
     outline: none;
-    padding: 0.5rem 2.5rem;
+    /* padding: 0.5rem 2.5rem; */
    /* box-shadow: 0 0 10px rgb(12, 12, 12); */
-    
+    width: 100%;
+  padding: 0.8rem 2.5rem; /* leaves space for icon */
+  font-size: clamp(0.9rem, 2vw, 1rem);
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -71,14 +75,18 @@ input::placeholder{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     position: relative;
+    width: 100%;
+  max-width: 600px; 
+  margin: 0 auto;
 }
 
 .weather-search i{
     position: absolute;
     top: 50%;
-    left: 0.5rem;
+    left: 0.8rem;
     transform: translateY(-50%);
     color: #090909;
+    font-size: 1rem;
     
 }
 
@@ -159,7 +167,7 @@ input::placeholder{
 
 .weather-minmax{
     
-    
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }
@@ -171,7 +179,7 @@ input::placeholder{
 
 .weather-info{
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -197,6 +205,11 @@ input::placeholder{
     *//*background-color: #f7f7f7;
     */color: #000;
     padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+ font-size: clamp(0.9rem, 2vw, 1.2rem);
+
+
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     
     /* border-radius: 10px; */
@@ -211,4 +224,65 @@ input::placeholder{
 .weather-card p {
     /* margin: 0; */
     font-size: 14px;
+}
+h1 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+.weather-temperature {
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+}
+.weather-minmax p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+
+@media (max-width: 480px) {
+  .weather-header {
+    flex-direction: column;
+  }
+  .weather-units {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  input {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-card {
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-search input {
+    padding: 0.6rem 2rem;
+    font-size: 0.85rem;
+  }
+  .weather-search i {
+    left: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .weather-minmax {
+    flex-direction: column; 
+  }
+  .weather-card {
+    font-size: 0.9rem;
+  }
 }
